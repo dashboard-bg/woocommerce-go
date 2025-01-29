@@ -25,11 +25,11 @@ type Product struct {
 	SKU               string                    `json:"sku"`
 	Price             float64                   `json:"price"`
 	RegularPrice      float64                   `json:"regular_price"`
-	SalePrice         float64                   `json:"sale_price"`
-	DateOnSaleFrom    string                    `json:"date_on_sale_from"`
-	DateOnSaleFromGMT string                    `json:"date_on_sale_from_gmt"`
-	DateOnSaleTo      string                    `json:"date_on_sale_to"`
-	DateOnSaleToGMT   string                    `json:"date_on_sale_to_gmt"`
+	SalePrice         *float64                  `json:"sale_price"`
+	DateOnSaleFrom    *string                   `json:"date_on_sale_from"`
+	DateOnSaleFromGMT *string                   `json:"date_on_sale_from_gmt"`
+	DateOnSaleTo      *string                   `json:"date_on_sale_to"`
+	DateOnSaleToGMT   *string                   `json:"date_on_sale_to_gmt"`
 	PriceHtml         string                    `json:"price_html"`
 	OnSale            bool                      `json:"on_sale"`
 	Purchasable       bool                      `json:"purchasable"`
